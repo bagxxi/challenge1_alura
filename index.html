@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jugando a encriptar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Jugando a encriptar</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Escriba aquí...">
+        <input class="btn" value="¡Encriptar mensaje!" onclick="funcionEncriptar()" id="btn-encriptar">
+        <input class="btn" value="¡Desencriptar mensaje!" onclick="funcionDesencriptar()" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h3 id="">Mensaje encriptado:</h3>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="submit" onclick="copyToClipBoard()" value="Copiar mensaje" id="btn-copy">
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+<footer>
+  <h5 class="piepagina">Desarrollado por Gabriel Balbontin</h5>
+</footer>
+</html>
